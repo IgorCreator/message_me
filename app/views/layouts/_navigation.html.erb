@@ -1,8 +1,6 @@
 <div class="ui inverted large menu">
   <div class="ui container">
-    <a class="item">
-      Chatroom
-    </a>
+    <%= link_to "Chatroom", root_path, class: "item" %>
     <a class="item">
       Messages
     </a>
@@ -11,9 +9,8 @@
         Account <i class="dropdown icon"></i>
         <div class="menu">
           <a class="item">Sign in</a>
-
-          <a class="item">Login</a>
-          <a class="item">Logout</a>
+          <%= link_to "Log in", login_path, class: "item" %>
+          <%= link_to "Logout", logout_path, class: "item" %>
         </div>
       </div>
       <div class="item">
